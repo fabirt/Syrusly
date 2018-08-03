@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SYRUSLY FAKE CAR #1</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <style>
+       #map {
+        height: 400px;
+        width: 70%;
+       }
+    </style>
+</head>
+<body>
+    
+    <h2>Fake Car #1</h2>
+    
+    <div>
+        <a>Lat: </a>
+        <a id="lat">0.0</a>
+    </div>
+    <div>
+        <a>Lng: </a>
+        <a id="lng">0.0</a>
+    </div>
+    <div>
+        <a>Date: </a>
+        <a id="date">0-0-0</a>
+    </div>
+    <div>
+        <a>Time: </a>
+        <a id="time">00:00:00</a>
+    </div>
+    
+    <input type="button" value="Enviar" id="button">
+    
+    <div id="map"></div>
+    
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGRBa9qdmI3IdX9MLY2xAl8GIiPIqlERk&callback=initMap">
+    </script>
+    
+    <script src="fakeCar1.js"></script>
+    
+</body>
+</html>

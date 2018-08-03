@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SYRUSLY</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/historial.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    
+    <script src="jquery.js"></script>
+    <script src="jquery.datetimepicker.full.js"></script>
+
+    <div class="wrapper">
+        <a class="head">CKFD SYRUSLY</a>
+        <a class="inicio" href="index.html">INICIO</a>
+        <a class="boton1" id="botonR" href="rastreo.html">RASTREO</a>
+        <a class="boton2" id="botonH" href="historial.html">HISTORIAL</a>
+    </div>
+    
+    <div class="historico" id="historial">
+        <h2><center>Historial</center></h2>
+        <br>
+        <h3>
+            <center>
+                <div>
+                    <span class="fa fa-calendar"></span>
+                    <input id="datetimefull_start" placeholder="Fecha de inicio" class="datetimefull_start">
+                </div>
+            </center>
+        </h3>
+        <br>
+        <h3>
+            <center>
+                <div>
+                    <span class="fa fa-calendar"></span>
+                    <input id="datetimefull_end" placeholder="Fecha de fin" class="datetimefull_end">
+                </div>
+            </center>
+        </h3>
+        <br>
+        <h3 class="search" id="search">
+            <center>Buscar</center>
+        </h3>
+        <br>
+        <label><input type="checkbox" id="checkbox" onclick="checkFunction()"> Busqueda por area</label>
+    </div>
+    
+    <div id="map"></div>
+    
+    <div id="chart_div" class="chart"></div>
+    
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGRBa9qdmI3IdX9MLY2xAl8GIiPIqlERk&libraries=visualization&callback=initMap">
+    </script>
+    
+    <script src="historico.js"></script>
+    
+</body>
+</html>
